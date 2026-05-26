@@ -73,7 +73,7 @@ pnpm dev
 # → http://localhost:3000
 ```
 
-You should be able to type *"I support Argentina, $3K budget, flying from Shanghai"* and watch the agent plan a multi-city trip.
+You should be able to type *"I support Argentina, $3K budget, flying from New York"* and watch the agent plan a multi-city trip.
 
 ---
 

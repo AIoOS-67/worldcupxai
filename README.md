@@ -69,7 +69,7 @@ sequenceDiagram
     participant M as Elastic MCP Server
     participant E as Elasticsearch (Indices + Memory)
 
-    U->>W: "I support Argentina, $3K budget, flying from Shanghai"
+    U->>W: "I support Argentina, $3K budget, flying from New York"
     W->>G: User intent + session id
     G->>M: recall_user_memory(user_id)
     M->>E: semantic search on wcx-memory
@@ -224,7 +224,7 @@ worldcupxai/
 
 ## 🎬 Demo (link will be added before submission)
 
-A ~3-minute narrated demo following Fernando, an Argentina fan in Shanghai, planning a multi-city trip, receiving a matchday brief, and getting fantasy advice — all from one conversation that remembers him.
+A ~3-minute narrated demo following Fernando, an Argentina fan in New York, planning a multi-city trip across U.S. host cities, receiving a matchday brief, and getting fantasy advice — all from one conversation that remembers him.
 
 ---
 
