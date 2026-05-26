@@ -1,0 +1,17 @@
+{
+  "name": "worldcupxai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "World Cup X AI — Your AI Concierge for the 2026 FIFA World Cup. Monorepo root.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @worldcupxai/web dev",
+    "build": "pnpm --filter @worldcupxai/web build",
+    "typecheck": "pnpm --filter @worldcupxai/web typecheck",
+    "lint": "pnpm --filter @worldcupxai/web lint"
+  }
+}
