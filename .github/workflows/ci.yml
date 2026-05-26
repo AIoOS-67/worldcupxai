@@ -1,0 +1,61 @@
+# Continuous Integration for World Cup X AI
+#
+# Runs on every push to main and on every pull request.
+# Today this workflow validates that the repo is healthy at the metadata level.
+# It will grow to lint and build the apps/web and apps/agent packages, and to
+# run MCP tool smoke tests against a seeded Elastic project.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  meta:
+    name: Repo metadata checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify README exists
+        run: test -f README.md
+
+      - name: Verify LICENSE exists
+        run: test -f LICENSE
+
+      - name: Verify docs scaffold
+        run: |
+          test -f docs/architecture.md
+          test -f docs/mcp-tools.md
+          test -f docs/elastic-mappings.md
+          test -f docs/setup.md
+
+      - name: Verify community files
+        run: |
+          test -f CONTRIBUTING.md
+          test -f SECURITY.md
+
+  lint-placeholder:
+    name: Lint (placeholder)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Echo intent
+        run: echo "TODO - replace with 'pnpm lint' once apps/web is scaffolded."
+
+  build-placeholder:
+    name: Build (placeholder)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Echo intent
+        run: echo "TODO - replace with 'pnpm build' once apps/web is scaffolded."
