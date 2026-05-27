@@ -12,6 +12,7 @@
     "dev": "pnpm --filter @worldcupxai/web dev",
     "build": "pnpm --filter @worldcupxai/web build",
     "typecheck": "pnpm --filter @worldcupxai/web typecheck",
-    "lint": "pnpm --filter @worldcupxai/web lint"
+    "lint": "pnpm --filter @worldcupxai/web lint",
+    "elastic:bootstrap": "node --env-file=apps/web/.env.local --experimental-strip-types infra/elastic/bootstrap.mts"
   }
 }
