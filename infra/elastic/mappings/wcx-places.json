@@ -1,0 +1,29 @@
+{
+  "mappings": {
+    "properties": {
+      "place_id":      { "type": "keyword" },
+      "name":          {
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } }
+      },
+      "alt_names":     { "type": "keyword" },
+      "type":          { "type": "keyword" },
+      "location":      { "type": "geo_point" },
+      "city":          { "type": "keyword" },
+      "country":       { "type": "keyword" },
+      "address":       { "type": "text" },
+      "description":   { "type": "semantic_text" },
+      "tags":          { "type": "keyword" },
+      "languages":     { "type": "keyword" },
+      "rating":        { "type": "float" },
+      "review_count":  { "type": "integer" },
+      "price_level":   { "type": "integer" },
+      "url":           { "type": "keyword" },
+      "phone":         { "type": "keyword" },
+      "opening_hours": { "type": "text" },
+      "near_venue":    { "type": "keyword" },
+      "created_at":    { "type": "date" },
+      "updated_at":    { "type": "date" }
+    }
+  }
+}

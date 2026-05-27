@@ -1,0 +1,24 @@
+{
+  "mappings": {
+    "properties": {
+      "memory_id":      { "type": "keyword" },
+      "user_id":        { "type": "keyword" },
+      "session_id":     { "type": "keyword" },
+      "kind":           { "type": "keyword" },
+      "summary":        { "type": "semantic_text" },
+      "raw_text":       { "type": "text" },
+      "tags":           { "type": "keyword" },
+      "confidence":     { "type": "float" },
+      "source_doc_ids": { "type": "keyword" },
+      "tool_calls":     {
+        "type": "nested",
+        "properties": {
+          "tool_name": { "type": "keyword" },
+          "tool_args": { "type": "object", "enabled": false }
+        }
+      },
+      "created_at":     { "type": "date" },
+      "expires_at":     { "type": "date" }
+    }
+  }
+}
