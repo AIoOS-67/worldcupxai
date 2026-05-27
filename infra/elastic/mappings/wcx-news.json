@@ -1,0 +1,29 @@
+{
+  "mappings": {
+    "properties": {
+      "news_id":            { "type": "keyword" },
+      "headline":           {
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } }
+      },
+      "body":               { "type": "semantic_text" },
+      "source":             { "type": "keyword" },
+      "url":                { "type": "keyword" },
+      "author":             { "type": "keyword" },
+      "lang":               { "type": "keyword" },
+      "published_at":       { "type": "date" },
+      "fetched_at":         { "type": "date" },
+      "tags":               { "type": "keyword" },
+      "relevance_score":    { "type": "float" },
+      "matches_referenced": { "type": "keyword" },
+      "entities":           {
+        "type": "nested",
+        "properties": {
+          "type": { "type": "keyword" },
+          "name": { "type": "keyword" },
+          "id":   { "type": "keyword" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "mappings": {
+    "properties": {
+      "review_id":       { "type": "keyword" },
+      "place_id":        { "type": "keyword" },
+      "author":          { "type": "keyword" },
+      "text":            { "type": "semantic_text" },
+      "translated_text": { "type": "text" },
+      "lang":            { "type": "keyword" },
+      "sentiment":       { "type": "keyword" },
+      "rating":          { "type": "integer" },
+      "posted_at":       { "type": "date" },
+      "source":          { "type": "keyword" },
+      "tags":            { "type": "keyword" },
+      "helpful_count":   { "type": "integer" },
+      "verified":        { "type": "boolean" },
+      "created_at":      { "type": "date" }
+    }
+  }
+}
