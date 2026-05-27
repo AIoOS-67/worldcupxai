@@ -17,6 +17,7 @@
     "elastic:ingest:venues":  "node --env-file=apps/web/.env.local --experimental-strip-types infra/elastic/ingest-venues.mts",
     "elastic:ingest:matches": "node --env-file=apps/web/.env.local --experimental-strip-types infra/elastic/ingest-matches.mts",
     "elastic:ingest:teams":   "node --env-file=apps/web/.env.local --experimental-strip-types infra/elastic/ingest-teams.mts",
-    "elastic:ingest:people":  "node --env-file=apps/web/.env.local --experimental-strip-types infra/elastic/ingest-people.mts"
+    "elastic:ingest:people":  "node --env-file=apps/web/.env.local --experimental-strip-types infra/elastic/ingest-people.mts",
+    "elastic:normalize-names":"node --env-file=apps/web/.env.local --experimental-strip-types infra/elastic/normalize-names.mts"
   }
 }

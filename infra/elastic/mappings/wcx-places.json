@@ -6,6 +6,7 @@
         "type": "text",
         "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } }
       },
+      "alt_names":     { "type": "keyword" },
       "type":          { "type": "keyword" },
       "location":      { "type": "geo_point" },
       "city":          { "type": "keyword" },

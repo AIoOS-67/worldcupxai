@@ -2,10 +2,12 @@
   "mappings": {
     "properties": {
       "team_id":          { "type": "keyword" },
+      "fifa_code":        { "type": "keyword" },
       "name":             {
         "type": "text",
         "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } }
       },
+      "alt_names":        { "type": "keyword" },
       "short_name":       { "type": "keyword" },
       "country":          { "type": "keyword" },
       "confederation":    { "type": "keyword" },
