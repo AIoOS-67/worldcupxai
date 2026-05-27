@@ -1,0 +1,32 @@
+{
+  "mappings": {
+    "properties": {
+      "team_id":          { "type": "keyword" },
+      "name":             {
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } }
+      },
+      "short_name":       { "type": "keyword" },
+      "country":          { "type": "keyword" },
+      "confederation":    { "type": "keyword" },
+      "manager":          { "type": "keyword" },
+      "home_venue":       { "type": "keyword" },
+      "home_place_id":    { "type": "keyword" },
+      "stadium_capacity": { "type": "integer" },
+      "formed_year":      { "type": "integer" },
+      "primary_color":    { "type": "keyword" },
+      "secondary_color":  { "type": "keyword" },
+      "badge_url":        { "type": "keyword" },
+      "jersey_url":       { "type": "keyword" },
+      "fanart_url":       { "type": "keyword" },
+      "description":      { "type": "semantic_text" },
+      "wc_group":         { "type": "keyword" },
+      "wc_appearances":   { "type": "integer" },
+      "wc_titles":        { "type": "integer" },
+      "elo_rating":       { "type": "float" },
+      "website":          { "type": "keyword" },
+      "created_at":       { "type": "date" },
+      "updated_at":       { "type": "date" }
+    }
+  }
+}

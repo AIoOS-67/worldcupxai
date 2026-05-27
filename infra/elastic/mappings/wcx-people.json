@@ -1,0 +1,31 @@
+{
+  "mappings": {
+    "properties": {
+      "person_id":      { "type": "keyword" },
+      "name":           {
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } }
+      },
+      "alt_name":       { "type": "keyword" },
+      "role":           { "type": "keyword" },
+      "team_id":        { "type": "keyword" },
+      "team_name":      { "type": "keyword" },
+      "position":       { "type": "keyword" },
+      "shirt_no":       { "type": "integer" },
+      "side":           { "type": "keyword" },
+      "nationality":    { "type": "keyword" },
+      "birth_date":     { "type": "date" },
+      "birth_location": { "type": "keyword" },
+      "height_cm":      { "type": "integer" },
+      "weight_kg":      { "type": "integer" },
+      "current_club":   { "type": "keyword" },
+      "bio":            { "type": "semantic_text" },
+      "photo_url":      { "type": "keyword" },
+      "cutout_url":     { "type": "keyword" },
+      "status":         { "type": "keyword" },
+      "wikidata_id":    { "type": "keyword" },
+      "created_at":     { "type": "date" },
+      "updated_at":     { "type": "date" }
+    }
+  }
+}
