@@ -1,0 +1,68 @@
+{
+  "mappings": {
+    "properties": {
+      "match_id":     { "type": "keyword" },
+      "home":         { "type": "keyword" },
+      "away":         { "type": "keyword" },
+      "kickoff_at":   { "type": "date" },
+      "tz":           { "type": "keyword" },
+      "stage":        { "type": "keyword" },
+      "group":        { "type": "keyword" },
+      "city":         { "type": "keyword" },
+      "venue":        { "type": "keyword" },
+      "country":      { "type": "keyword" },
+      "score":        {
+        "type": "object",
+        "properties": {
+          "home":    { "type": "integer" },
+          "away":    { "type": "integer" },
+          "et_home": { "type": "integer" },
+          "et_away": { "type": "integer" },
+          "pen_home":{ "type": "integer" },
+          "pen_away":{ "type": "integer" }
+        }
+      },
+      "summary":      { "type": "text" },
+      "lineup_home":  {
+        "type": "nested",
+        "properties": {
+          "player_id": { "type": "keyword" },
+          "name":      { "type": "keyword" },
+          "position":  { "type": "keyword" },
+          "shirt_no":  { "type": "integer" },
+          "is_captain":{ "type": "boolean" }
+        }
+      },
+      "lineup_away":  {
+        "type": "nested",
+        "properties": {
+          "player_id": { "type": "keyword" },
+          "name":      { "type": "keyword" },
+          "position":  { "type": "keyword" },
+          "shirt_no":  { "type": "integer" },
+          "is_captain":{ "type": "boolean" }
+        }
+      },
+      "injuries":     {
+        "type": "nested",
+        "properties": {
+          "player_id":   { "type": "keyword" },
+          "team":        { "type": "keyword" },
+          "description": { "type": "text" },
+          "severity":    { "type": "keyword" },
+          "updated_at":  { "type": "date" }
+        }
+      },
+      "tv_broadcasts": {
+        "type": "nested",
+        "properties": {
+          "country":    { "type": "keyword" },
+          "channel":    { "type": "keyword" },
+          "stream_url": { "type": "keyword" }
+        }
+      },
+      "created_at":  { "type": "date" },
+      "updated_at":  { "type": "date" }
+    }
+  }
+}
