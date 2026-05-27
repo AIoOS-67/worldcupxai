@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "description": "16 host stadiums for the 2026 FIFA World Cup. Each entry pairs the local code/city/country with TheSportsDB's idVenue, which is the lookup key against TheSportsDB's venue endpoint. All English fields only — no localization.",
+    "source": "FIFA 2026 official + TheSportsDB",
+    "tournament_dates": "2026-06-11 to 2026-07-19",
+    "match_total": 104
+  },
+  "venues": [
+    { "idVenue": "15812", "code": "new-york",      "city": "New York",              "country": "USA",    "match_count": 8, "phases": ["Group", "Round of 32", "Quarterfinal", "Final"] },
+    { "idVenue": "23720", "code": "los-angeles",   "city": "Los Angeles",           "country": "USA",    "match_count": 8, "phases": ["Group", "Round of 32", "Round of 16"] },
+    { "idVenue": "15802", "code": "dallas",        "city": "Dallas",                "country": "USA",    "match_count": 9, "phases": ["Group", "Round of 32", "Round of 16", "Semifinal"] },
+    { "idVenue": "16029", "code": "atlanta",       "city": "Atlanta",               "country": "USA",    "match_count": 8, "phases": ["Group", "Round of 32", "Round of 16"] },
+    { "idVenue": "15873", "code": "houston",       "city": "Houston",               "country": "USA",    "match_count": 7, "phases": ["Group", "Round of 32", "Round of 16"] },
+    { "idVenue": "20373", "code": "miami",         "city": "Miami",                 "country": "USA",    "match_count": 7, "phases": ["Group", "Round of 32", "Round of 16", "Third place"] },
+    { "idVenue": "16094", "code": "philadelphia",  "city": "Philadelphia",          "country": "USA",    "match_count": 6, "phases": ["Group", "Round of 32", "Round of 16"] },
+    { "idVenue": "29575", "code": "kansas-city",   "city": "Kansas City",           "country": "USA",    "match_count": 6, "phases": ["Group", "Round of 32", "Round of 16"] },
+    { "idVenue": "19833", "code": "seattle",       "city": "Seattle",               "country": "USA",    "match_count": 6, "phases": ["Group", "Round of 32", "Round of 16"] },
+    { "idVenue": "15816", "code": "boston",        "city": "Boston",                "country": "USA",    "match_count": 7, "phases": ["Group", "Round of 32", "Quarterfinal"] },
+    { "idVenue": "16090", "code": "san-francisco", "city": "San Francisco Bay Area","country": "USA",    "match_count": 6, "phases": ["Group", "Round of 32", "Round of 16"] },
+    { "idVenue": "16782", "code": "toronto",       "city": "Toronto",               "country": "Canada", "match_count": 6, "phases": ["Group", "Round of 32"] },
+    { "idVenue": "25843", "code": "vancouver",     "city": "Vancouver",             "country": "Canada", "match_count": 7, "phases": ["Group", "Round of 32", "Round of 16"] },
+    { "idVenue": "16559", "code": "mexico-city",   "city": "Mexico City",           "country": "Mexico", "match_count": 5, "phases": ["Opening match", "Group", "Round of 32"] },
+    { "idVenue": "17548", "code": "guadalajara",   "city": "Guadalajara",           "country": "Mexico", "match_count": 4, "phases": ["Group"] },
+    { "idVenue": "21191", "code": "monterrey",     "city": "Monterrey",             "country": "Mexico", "match_count": 4, "phases": ["Group"] }
+  ]
+}
